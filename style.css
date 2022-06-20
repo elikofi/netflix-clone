@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*styling for all the part of the body section begins here*/
+
+body {
+    background-size: auto;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0.8) 200%), url(/images/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+/*styling for the netflix logo and sign-in button*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+}
+.netflix-logo {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 200px;
+}
+.logo {
+    width: 150px;
+    z-index: 1;
+}
+.sign-in-but {
+    background-color: #E50914;
+    border: none;
+    padding: 9px;
+    width: 90px;
+    color: white;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: medium;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 20px 40px 0 0;
+    z-index: 2;
+}
+
+/*styling for the h1, h2 & h3 elements begins here*/
+
+.content {
+    color: white;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90vw;
+    margin: 150px auto 20px auto;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin: 10px auto 0 auto;
+    padding: 0 20px 0 20px;
+    font-size: 50px;
+    max-width: 640px;
+}
+h2 {
+    margin: 10px auto 10px auto;
+    font-size: 23px;
+    font-weight: 400;
+}
+h3 {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 15px auto 0 auto;
+    max-width: 550px;
+}
+
+/*styling for the input and get-started button begins here*/
+
+.enter {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 90vw;
+    letter-spacing: 1px;
+}
+.email {
+    width: 70vmin;
+    padding: 20px 20px 20px 10px;
+    font-size: medium;
+}
+.email:focus {
+    outline: none;
+}
+.get {
+    height: 62px;
+    width: 200px;
+    color: white;
+    font-size: x-large;
+    background-color: #E50914;
+    border: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    letter-spacing: 2px;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.get:hover {
+    cursor: pointer;
+    background-color: #ff000d;
+}
+span {
+    padding-left: 10px;
+}
+
+/*media queries styling is below*/
+
+@media screen and (max-width:950px) {
+    .enter {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .get {
+        height: 40px;
+        width: 150px;
+        padding: 5px;
+        border-radius: 3px;
+        font-size: medium;
+    }
+}
+
