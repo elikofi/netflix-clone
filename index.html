@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/Images/netflix-icon.png" type="image/x-icon">
         <link href="style.css" rel="stylesheet">
     </head>
     <body><!--the first part of the page, where the logo and sign-in button are-->
@@ -12,9 +13,11 @@
             <div class="netflix-logo">
                 <img class="logo" src="/images/netflix-logo.png">
             </div>
-            <div>
-                <button class="sign-in-but">Sign In</button>
-            </div>
+            <form action="">
+                <div>
+                    <button class="sign-in-but">Sign In</button>
+                </div>
+            </form>
         </div>
         <!--the second part of the page, where the main contents are, including the h1 and paragraphs-->
         <div class="content">
@@ -23,9 +26,11 @@
             <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
         </div>
         <!--the last section of the page, where the input and button are-->
-        <div class="enter">
-            <div><input class="email" type="email" placeholder="Email address"></div>
-            <div><button class="get">Get Started <span>⟩</span></button></div>
-        </div>    
+        <form action="">
+            <div class="enter">
+                <div><input class="email" type="email" placeholder="Email address"></div>
+                <div><button class="get">Get Started <span>⟩</span></button></div>
+            </div>
+        </form>
     </body>
 </html>
